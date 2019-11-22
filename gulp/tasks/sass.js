@@ -10,7 +10,7 @@ module.exports = function (){
 	.pipe($.gp.autoprefixer({
 
 		grid: true,
-		overrideBrowserslist: ['last 5 versions']
+		overrideBrowserslist: ['last 4 versions']
 	}))
 	.pipe($.cleanCSS({compatibility: 'ie11'}))
 	.pipe($.tabify(2, true))

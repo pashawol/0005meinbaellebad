@@ -1,6 +1,14 @@
+
+.language--select {
+  display: none;
+}
 .top-line {
+
   background-color: #e4eef8;
   padding-top: rem(50 / 2);
+  ul{
+    list-style-type: none;
+  }
   padding-bottom: rem(50 / 2);
 	.row{
     @include media-breakpoint-up(md) {
