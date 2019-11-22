@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="de">
 	<head>
 		<meta charset="utf-8">
 		<title>title</title>
@@ -19,112 +19,1396 @@
 		<meta property="og:image:height" content="504">
 		<!-- Custom Browsers Color-->
 		<meta name="theme-color" content="#3361d8">
-		<link rel="stylesheet" href="libs/slick-carousel/slick/slick.css"/>
-		<link rel="stylesheet" href="libs/@fancyapps/fancybox/jquery.fancybox.min.css"/>
+		<link rel="stylesheet" href="libs/swiper/css/swiper.min.css"/>
+		<link rel="stylesheet" href="css/1567503006_05d619d046f5cb425a935488c43cf3e3.css"/>
 		<link rel="stylesheet" href="css/main.min.css"/>
 	</head>
-	<body><script>(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4)))&&document.body.classList.add('mobile');</script>
-<script>!function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);</script>
-<!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
+	<body><!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
 		<div class="main-wrapper">
-			<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
-			</div>
-			<div class="menu-mobile menu-mobile--js d-lg-none">
-				<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
-				</div>
-				<div class="menu-mobile__inner">
-					<ul class="menu-mobile__nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="/" itemprop="url">Главная</a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Услуги  </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Подбор септика   </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Акции </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> О компании  </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> Доставка и оплата </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> Клиентам  </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> Наши работы   </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Контакты </a>
-						</li>
-					</ul>
-					<div class="text-right"></div>
-				</div>
-			</div>
-			<!--  мобильное меню-->
 			<!-- start HEADER.header-->
 			<header class="header block-with-lazy">
 				<!-- start .top-line-->
 				<div class="top-line block-with-lazy">
 					<div class="container">
-						<div class="row">top-line</div>
+						<div class="row">
+							<div class="col-auto">
+								<ul>
+									<li class="d-none d-md-block"><a href="tel:+49(0)7471-933197-15">
+											<svg class="icon icon-tel ">
+												<use xlink:href="img/svg/sprite.svg#tel"></use>
+											</svg>+49 (0) 7471-933197-15 </a></li>
+									<li> Mo–Fr: 8.00–17.30 Uhr</li>
+									<li class="d-none d-md-block"><a href="#">kurze Lieferzeiten</a></li>
+								</ul>
+							</div>
+							<div class="col-auto">
+								<form class="sub-shop--form" method="post">
+									<div class="field--select"></div>
+									<ul>
+										<li><a href="#">Kontakt </a></li>
+										<li>
+											<div class="language--item"> 
+												<input class="language--select" id="shop_1" type="radio" value="1" checked="checked" name="__shop" data-auto-submit="true"/>
+												<label for="shop_1"> <span class="language--text">GER</span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div class="language--item"> 
+												<input class="language--select" id="shop_3" type="radio" value="3" name="__shop" data-auto-submit="true"/>
+												<label for="shop_3"> <span class="language--text">    ENG</span></label>
+											</div>
+											<input type="hidden" name="__redirect" value="1"/>
+											<input type="hidden" name="__csrf_token" value="k5Un1tidPKcYRuSeJUnEvCSahDkAEn"/>
+										</li>
+									</ul>
+								</form>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- end .top-line-->
 				<!-- start top-nav-->
 				<div class="top-nav block-with-lazy">
 					<div class="container">
-						<ul class="top-nav__nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="/" itemprop="url">Главная</a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url">Услуги  </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url">Подбор септика   </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url">Акции </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url"> О компании  </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url"> Доставка и оплата </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url"> Клиентам  </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url"> Наши работы   </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url">Контакты </a>
-							</li>
-						</ul>
+						<div class="row">
+							<div class="col-auto d-lg-none">
+								<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+								</div>
+							</div>
+							<div class="col-xl-auto col-lg col-auto">
+								<div class="logo--shop block"><a class="logo--link" href="https://www.meinbaellebad.de/" title="meinbaellebad.de  - zur Startseite wechseln">
+										<picture>
+											<source srcset="https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png" media="(min-width: 78.75em)"/>
+											<source srcset="https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png" media="(min-width: 64em)"/>
+											<source srcset="https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png" media="(min-width: 48em)"/><img src="https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png" srcset="https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png" alt="meinbaellebad.de  - zur Startseite wechseln"/>
+										</picture></a></div>
+							</div>
+							<div class="top-nav__col-inner col-auto d-none d-lg-flex"><a class="top-nav__btn btn-link" href="#">Einloggen</a><a class="top-nav__btn btn-primary" href="#">Registrieren</a>
+							</div>
+							<div class="col-auto d-lg-none">
+								<button class="top-nav__btn-icon" type="button"><img src="img/@2x/head-i-3.png" alt=""/>
+								</button>
+							</div>
+							<div class="col-xl d-none d-lg-block">
+								<div class="navigation--list-wrapper">
+									<ul class="navigation--list container js--menu-scroller--list" role="menubar" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" style="bottom: 0px; margin-top: 0px;">
+										<li class="navigation--entry is--active is--home js--menu-scroller--item" role="menuitem"><a class="navigation--link is--first active" href="https://www.meinbaellebad.de/" title="Home" itemprop="url"><span itemprop="name"><img alt="Haus Icon" src="https://www.meinbaellebad.de/themes/Frontend/Baellebad/frontend/_public/src/img/haus-menu.png"/>Home</span></a></li>
+										<li class="navigation--entry js--menu-scroller--item" role="menuitem"><a class="navigation--link" href="https://www.meinbaellebad.de/runde-baellebaeder/" title="Runde Bällebäder" itemprop="url"><span itemprop="name"><img alt="Runde Bällebäder" src="https://www.meinbaellebad.de/media/image/cc/ec/e1/runde-menu591ab373d5042.png"/>Runde Bällebäder</span></a></li>
+										<li class="navigation--entry js--menu-scroller--item" role="menuitem"><a class="navigation--link" href="https://www.meinbaellebad.de/eckige-baellebaeder/" title="Eckige Bällebäder" itemprop="url"><span itemprop="name"><img alt="Eckige Bällebäder" src="https://www.meinbaellebad.de/media/image/03/21/d6/eckige-menu591ab37436525.png"/>Eckige Bällebäder</span></a></li>
+										<li class="navigation--entry js--menu-scroller--item" role="menuitem"><a class="navigation--link" href="https://www.meinbaellebad.de/baellebad-sofort/" title="Einzelne Bälle" itemprop="url"><span itemprop="name"><img alt="Einzelne Bälle" src="https://www.meinbaellebad.de/media/image/d1/bc/42/Stern-menu591ab3739cdb4.png"/>Einzelne Bälle</span></a></li>
+										<li class="navigation--entry js--menu-scroller--item" role="menuitem"><a class="navigation--link" href="https://www.meinbaellebad.de/baellebad-sofort/" title="Bällebad Mieten" itemprop="url"><span itemprop="name"><img alt="Bällebad Mieten" src="https://www.meinbaellebad.de/media/image/d1/bc/42/Stern-menu591ab3739cdb4.png"/>Bällebad Mieten</span></a></li>
+									</ul>
+								</div>
+								<div class="top-nav__search-wrap row">
+									<div class="col">
+										<div class="navigation--entry entry--search" data-search="true" aria-haspopup="true" data-minlength="3"><a class="btn entry--link entry--trigger" href="#show-hide--search" title="Suche anzeigen / schließen"><i class="icon--search"></i><span class="search--display">Suchen</span></a>
+											<form class="main-search--form" action="/search" method="get">
+												<input class="main-search--field" type="search" name="sSearch" autocomplete="off" autocapitalize="off" placeholder="Suchen" maxlength="30"/>
+												<button class="main-search--button" type="submit"></button>
+												<div class="form--ajax-loader"> </div>
+											</form>
+											<div class="main-search--results"></div>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="top-nav__btn-wrap">
+											<button class="top-nav__btn-icon" type="button"><img src="img/@2x/head-i-1.png" alt=""/>
+											</button>
+											<button class="top-nav__btn-icon" type="button"><img src="img/@2x/head-i-2.png" alt=""/>
+											</button>
+											<button class="top-nav__btn-icon" type="button"><img src="img/@2x/head-i-3.png" alt=""/>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- end top-nav-->
+				<div class="menu-mobile menu-mobile--js d-lg-none">
+					<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+					</div>
+					<div class="menu-mobile__inner">
+						<div class="navigation--list-wrapper">
+							<ul class="navigation--list container js--menu-scroller--list" role="menubar" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" style="bottom: 0px; margin-top: 0px;">
+								<li class="navigation--entry is--active is--home js--menu-scroller--item" role="menuitem"><a class="navigation--link is--first active" href="https://www.meinbaellebad.de/" title="Home" itemprop="url"><span itemprop="name"><img alt="Haus Icon" src="https://www.meinbaellebad.de/themes/Frontend/Baellebad/frontend/_public/src/img/haus-menu.png"/>Home</span></a></li>
+								<li class="navigation--entry js--menu-scroller--item" role="menuitem"><a class="navigation--link" href="https://www.meinbaellebad.de/runde-baellebaeder/" title="Runde Bällebäder" itemprop="url"><span itemprop="name"><img alt="Runde Bällebäder" src="https://www.meinbaellebad.de/media/image/cc/ec/e1/runde-menu591ab373d5042.png"/>Runde Bällebäder</span></a></li>
+								<li class="navigation--entry js--menu-scroller--item" role="menuitem"><a class="navigation--link" href="https://www.meinbaellebad.de/eckige-baellebaeder/" title="Eckige Bällebäder" itemprop="url"><span itemprop="name"><img alt="Eckige Bällebäder" src="https://www.meinbaellebad.de/media/image/03/21/d6/eckige-menu591ab37436525.png"/>Eckige Bällebäder</span></a></li>
+								<li class="navigation--entry js--menu-scroller--item" role="menuitem"><a class="navigation--link" href="https://www.meinbaellebad.de/baellebad-sofort/" title="Einzelne Bälle" itemprop="url"><span itemprop="name"><img alt="Einzelne Bälle" src="https://www.meinbaellebad.de/media/image/d1/bc/42/Stern-menu591ab3739cdb4.png"/>Einzelne Bälle</span></a></li>
+								<li class="navigation--entry js--menu-scroller--item" role="menuitem"><a class="navigation--link" href="https://www.meinbaellebad.de/baellebad-sofort/" title="Bällebad Mieten" itemprop="url"><span itemprop="name"><img alt="Bällebad Mieten" src="https://www.meinbaellebad.de/media/image/d1/bc/42/Stern-menu591ab3739cdb4.png"/>Bällebad Mieten</span></a></li>
+							</ul>
+						</div>
+						<div class="menu-mobile__btn-wrap"><a class="menu-mobile__btn btn-link" href="#">Einloggen</a><a class="menu-mobile__btn btn-primary" href="#">Registrieren</a>
+						</div>
+						<div class="menu-mobile__btn-wrap">
+							<button class="menu-mobile__btn-icon" type="button"><img src="img/@2x/head-i-1.png" alt=""/>Favoriten
+							</button>
+							<button class="menu-mobile__btn-icon" type="button"><img src="img/@2x/head-i-2.png" alt=""/>Nachricht
+							</button>
+							<button class="menu-mobile__btn-icon" type="button">Suchen
+							</button>
+						</div>
+					</div>
+				</div>
+				<!--  мобильное меню-->
 			</header>
 			<!-- end HEADER.header-->
 			<!-- start header-block-->
 			<div class="header-block" id="header-block">
-				<div class="container">
-					<h1>header-block</h1>
-					<div class="row"></div>
+				<div class="header-block__slider one-slider one-slider--js swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/@2x/slide-1.jpg"/>
+								<source media="(min-width: 440px)" srcset="img/@2x/slide-1-md.jpg"/><img class="object-fit-js" src="img/@2x/slide-1-sm.jpg" alt=""/>
+							</picture>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/@2x/slide-2.jpg"/>
+								<source media="(min-width: 440px)" srcset="img/@2x/slide-2-md.jpg"/><img class="object-fit-js" src="img/@2x/slide-2-sm.jpg" alt=""/>
+							</picture>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source media="(min-width: 768px)" srcset="img/@2x/slide-3.jpg"/>
+								<source media="(min-width: 440px)" srcset="img/@2x/slide-3-md.jpg"/><img class="object-fit-js" src="img/@2x/slide-3-sm.jpg" alt=""/>
+							</picture>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
 				</div>
 			</div>
 			<!-- end header-block-->
-			<!-- start s-form-->
-			<div class="s-form section block-with-lazy" id="s-form">
+			<!-- start s-main-prod-->
+			<div class="s-main-prod" id="s-main-prod">
 				<div class="container">
-					<div class="section-title text-center">
-						<h2>s-form</h2>
+					<div class="row">
+						<div class="s-main-prod__col col-md-4"><a href="#">
+								<!-- picture-->
+								<picture class="lazy"> 
+									<!-- /webp images  --><img src="img/@0x/cat-1.jpg" data-src="img/@2x/cat-1.jpg" alt=""/>
+								</picture>
+								<!-- /picture--></a>
+						</div>
+						<div class="s-main-prod__col col-md-4"><a href="#">
+								<!-- picture-->
+								<picture class="lazy"> 
+									<!-- /webp images  --><img src="img/@0x/cat-2.jpg" data-src="img/@2x/cat-2.jpg" alt=""/>
+								</picture>
+								<!-- /picture--></a>
+						</div>
+						<div class="s-main-prod__col col-md-4"><a href="#">
+								<!-- picture-->
+								<picture class="lazy"> 
+									<!-- /webp images  --><img src="img/@0x/cat-3.jpg" data-src="img/@2x/cat-3.jpg" alt=""/>
+								</picture>
+								<!-- /picture--></a>
+						</div>
 					</div>
-					<div class="row"></div>
 				</div>
 			</div>
-			<!-- end s-form-->
-			<!-- start s-contact-->
-			<div class="s-contact section block-with-lazy" id="s-contact">
+			<!-- end s-main-prod-->
+			<!-- start s-catalog-->
+			<section class="s-catalog section" id="s-catalog">
 				<div class="container">
 					<div class="section-title text-center">
-						<h2>s-contact</h2>
+						<h2>
+							Unsere  <span> Bestseller</span></h2>
 					</div>
-					<div class="row"></div>
+					<div class="s-catalog__slider-3 one-slider one-slider--js swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="s-catalog__card-wrap">
+											<button class="btn-like active" type="button">
+												<svg class="icon icon-like ">
+													<use xlink:href="img/svg/sprite.svg#like"></use>
+												</svg>
+											</button><a href="#"><img class="object-fit-js" src="img/@2x/prod-sl-1.jpg" alt=""/></a>
+										</div>
+									</div>
+									<div class="col-md-6 d-flex flex-column justify-content-between"> 
+										<div class="s-catalog__card-wrap">
+											<button class="btn-like" type="button">
+												<svg class="icon icon-like ">
+													<use xlink:href="img/svg/sprite.svg#like"></use>
+												</svg>
+											</button><a href="#"><img class="object-fit-js" src="img/@2x/prod-sl-2.jpg" alt=""/></a>
+										</div>
+										<div class="s-catalog__card-wrap">
+											<button class="btn-like" type="button">
+												<svg class="icon icon-like ">
+													<use xlink:href="img/svg/sprite.svg#like"></use>
+												</svg>
+											</button><a href="#"><img class="object-fit-js" src="img/@2x/prod-sl-3.jpg" alt=""/></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="s-catalog__card-wrap">
+											<button class="btn-like active" type="button">
+												<svg class="icon icon-like ">
+													<use xlink:href="img/svg/sprite.svg#like"></use>
+												</svg>
+											</button><a href="#"><img class="object-fit-js" src="img/@2x/prod-sl-1.jpg" alt=""/></a>
+										</div>
+									</div>
+									<div class="col-md-6 d-flex flex-column justify-content-between"> 
+										<div class="s-catalog__card-wrap">
+											<button class="btn-like" type="button">
+												<svg class="icon icon-like ">
+													<use xlink:href="img/svg/sprite.svg#like"></use>
+												</svg>
+											</button><a href="#"><img class="object-fit-js" src="img/@2x/prod-sl-2.jpg" alt=""/></a>
+										</div>
+										<div class="s-catalog__card-wrap">
+											<button class="btn-like" type="button">
+												<svg class="icon icon-like ">
+													<use xlink:href="img/svg/sprite.svg#like"></use>
+												</svg>
+											</button><a href="#"><img class="object-fit-js" src="img/@2x/prod-sl-3.jpg" alt=""/></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="s-catalog__card-wrap">
+											<button class="btn-like active" type="button">
+												<svg class="icon icon-like ">
+													<use xlink:href="img/svg/sprite.svg#like"></use>
+												</svg>
+											</button><a href="#"><img class="object-fit-js" src="img/@2x/prod-sl-1.jpg" alt=""/></a>
+										</div>
+									</div>
+									<div class="col-md-6 d-flex flex-column justify-content-between"> 
+										<div class="s-catalog__card-wrap">
+											<button class="btn-like" type="button">
+												<svg class="icon icon-like ">
+													<use xlink:href="img/svg/sprite.svg#like"></use>
+												</svg>
+											</button><a href="#"><img class="object-fit-js" src="img/@2x/prod-sl-2.jpg" alt=""/></a>
+										</div>
+										<div class="s-catalog__card-wrap">
+											<button class="btn-like" type="button">
+												<svg class="icon icon-like ">
+													<use xlink:href="img/svg/sprite.svg#like"></use>
+												</svg>
+											</button><a href="#"><img class="object-fit-js" src="img/@2x/prod-sl-3.jpg" alt=""/></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination d-none d-md-block"></div>
+					</div>
+					<div class="d-md-none text-center"><a class="btn btn-dark" href="#">Alle Bestseller</a></div>
+				</div>
+			</section>
+			<!-- end s-catalog-->
+			<!-- start s-catalog-slider-->
+			<section class="s-catalog-slider section">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>
+							Runde <span>BÄllebäder</span></h2>
+					</div>
+					<div class="s-catalog-slider__slider-4 slider-4 slider-4--js swiper-container not-mobile">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-1.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-2.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-3.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="d-md-none text-center"><a class="btn btn-dark" href="#">Alle Bestseller</a></div>
+				</div>
+			</section>
+			<!-- end s-catalog-slider-->
+			<!-- start s-catalog-slider-3-->
+			<div class="section-title section-title--mobile d-sm-none text-center">
+				<h2 class="text-purple">
+					Pricess <span>BÄllebäder</span></h2>
+			</div>
+			<section class="s-catalog-slider-3 section" data-bg="img/@2x/bg-1.jpg">
+				<div class="container">
+					<div class="section-title text-center d-none d-sm-block">
+						<h2 class="text-purple">
+							Pricess <span>BÄllebäder</span></h2>
+					</div>
+					<div class="s-catalog-slider-3__row-wrap">
+						<div class="row">
+							<div class="col-xl-4 col-md-6">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media"><img src="#" srcset="img/@2x/prod-5.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-6 d-none d-md-block">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media"><img src="#" srcset="img/@2x/prod-6.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-6 d-none d-xl-block">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media"><img src="#" srcset="img/@2x/prod-7.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center"><a class="btn btn-purple btn-more" href="#">Alle ansehen</a></div>
+				</div>
+			</section>
+			<!-- end s-catalog-slider-3-->
+			<!-- start s-catalog-slider-->
+			<section class="s-catalog-slider section">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>
+							Eckige  <span>BÄllebäder</span></h2>
+					</div>
+					<div class="s-catalog-slider__slider-4 slider-4 slider-4--js swiper-container not-mobile">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-8.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-9.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-10.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-11.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="d-md-none text-center"><a class="btn btn-dark" href="#">Alle Bestseller</a></div>
+				</div>
+			</section>
+			<!-- end s-catalog-slider-->
+			<!-- start s-catalog-slider-->
+			<section class="s-catalog-slider section">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>
+							unvergleichbare  <span>stoffauswahl</span></h2>
+					</div>
+					<div class="s-catalog-slider__slider-4 slider-4 slider-4--js swiper-container not-mobile">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-8.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-9.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-10.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-11.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="d-md-none text-center"><a class="btn btn-dark" href="#">Alle Bestseller</a></div>
+				</div>
+			</section>
+			<!-- end s-catalog-slider-->
+			<!-- start s-steps-->
+			<section class="s-steps" id="s-steps">
+				<div class="container">
+					<div class="s-steps__inner section">
+						<div class="section-title text-center">
+							<h2>
+								erstelle dir dein eigenes  <span>Bällebad!</span></h2>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="s-steps__item">
+									<div class="s-steps__title">Auswahl Bällebad
+									</div>
+									<p>Wähle zuerst ein aus unserer unvergleichbaren Stoffauswahl eine Farbe aus.</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="s-steps__item">
+									<div class="s-steps__title">Auswahl Bällebad
+									</div>
+									<p>Wähle bis zu 5 Farben aus  unserem Sortiment aus.</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="s-steps__item">
+									<div class="s-steps__title">Auswahl Bällebad
+									</div>
+									<p>Die Lieferung erfolgt in 1-2 Tagen zu dir nach Hause!</p>
+								</div>
+							</div>
+						</div><a class="btn btn-blue bdr-0" href="#">Hier gehts zum konfigurator</a>
+					</div>
+				</div>
+			</section>
+			<!-- end s-steps-->
+			<!-- start s-catalog-slider-3-->
+			<section class="s-catalog-slider-3 s-catalog-slider-3--weltall section" data-bg="img/@2x/bg-2.jpg">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>
+							 Weltall <span>BÄllebäder</span></h2>
+					</div>
+					<div class="s-catalog-slider-3__row-wrap">
+						<div class="row">
+							<div class="col-xl-4 col-md-6">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media"><img src="#" srcset="img/@2x/prod-12.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-6 d-none d-md-block">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media"><img src="#" srcset="img/@2x/prod-13.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-6 d-none d-xl-block">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media"><img src="#" srcset="img/@2x/prod-14.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center"><a class="btn btn-dark btn-more" href="#">Alle ansehen</a></div>
+				</div>
+			</section>
+			<!-- end s-catalog-slider-3-->
+			<!-- start s-catalog-slider-->
+			<section class="s-catalog-slider section">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>
+							Einzel <span> BÄlle</span></h2>
+					</div>
+					<div class="s-catalog-slider__slider-4 slider-4 slider-4--js swiper-container not-mobile">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-15.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-16.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-17.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- взял с сайта-->
+								<div class="product--box box--image" data-page-index="1" data-ordernumber="1210222" data-category-id="6">
+									<div class="box--content is--rounded">
+										<div class="product--badges">
+											<div class="product--badge badge--recommend">TIPP!</div>
+										</div>
+										<button class="btn-like" type="button">
+											<svg class="icon icon-like ">
+												<use xlink:href="img/svg/sprite.svg#like"></use>
+											</svg>
+										</button>
+										<div class="product--info"><a class="product--image" href="#" title="90cm Bällebad in grau mit 200 Bällen"><span class="image--element"><span class="image--media">
+														<!-- тут изменил на лэзи загрузку--><img class="swiper-lazy" src="#" data-srcset="img/@2x/prod-18.jpg" alt="90cm Bällebad in grau mit 200 Bällen" title="90cm Bällebad in grau mit 200 Bällen"/></span></span></a><a class="product--title" href="#" title="90cm Bällebad in grau mit 200 Bällen">Märchenbällebad "Sterntaler" </a>
+											<div class="color-block">
+												<div class="color-block__item" style="background-color: #ffffff; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #f5f5f5; border: 1px solid #c1bfbf;">
+												</div>
+												<div class="color-block__item" style="background-color: #adc581;">
+												</div>
+												<div class="color-block__item" style="background-color: #6ee5d6;">
+												</div>
+												<div class="color-block__item" style="background-color: #c7d69b;">
+												</div>
+											</div>
+											<div class="product--description">Märchen erzählen, träumen und spielen in dem mit dem weichen, hellg...</div>
+											<div class="product--price-info">
+												<div class="product--price"><span class="price--default is--nowrap">139,00 €</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="d-md-none text-center"><a class="btn btn-dark" href="#">Alle Bestseller</a></div>
+				</div>
+			</section>
+			<!-- end s-catalog-slider-->
+			<!-- start s-rest-->
+			<div class="s-rest section" id="s-rest">
+				<div class="container">
+					<div class="s-rest__inner">
+						<div class="s-rest__title">
+							Kindergeburtstage, Firmenevents oder Messeauftritte?<strong>Bällebäder zum Vermieten </strong>
+						</div><a class="s-rest__btn" href="#">Kontakt Aufnehmen</a>
+					</div>
 				</div>
 			</div>
-			<!-- end s-contact-->
+			<!-- end s-rest-->
+			<!-- start s-follow-us-->
+			<section class="s-follow-us text-center section" id="s-follow-us">
+				<div class="container">
+					<div class="section-title">
+						<h2>
+							Ihrer Phantasie<span>sind keine Grenzen gesetzt!</span></h2>
+					</div>
+					<div class="row">
+						<div class="s-follow-us__col col-xl-3 col-lg-4"><img class="res-i" src="img/@2x/s-follow-us-1.png" alt=""/>
+							<h3> Mieten Sie ein Bällebad</h3>
+							<h6>Holen Sie sich den ultimativen Spaß auf Ihren Event</h6>
+							<p>Sie planen eine unvergessliche Veranstaltung für Groß und Klein?  Mit unseren Bällebädern gelingt Ihnen das auf jeden Fall. Ob für Kindergeburtstage, Firmenevents oder Messeauftritte, bei Meinbällebad.de finden Sie genau das, wonach sie suchen. Unsere Bällebäder kann man unkompliziert und günstig in allen Größen für Indoor- oder Outdoorevents mieten. Ob Pools, Ballbecken oder ganze Räume voller Bälle: Meinbällebad.de macht ihr Event zum Traum aller Kinder und derer, die sich noch einmal so fühlen wollen. </p><img class="res-i" src="img/@2x/s-follow-us-2.png" alt=""/>
+						</div>
+						<div class="s-follow-us__col col-xl-3 col-lg-4">
+							<h3> 39 verschiedenen  Ballfarben</h3>
+							<h6>Wir bieten Ihnen die größte Farbauswahl Deutschlands!</h6>
+							<p>Ob es passend zu Ihrer Firmenfarbe sein soll oder besonders bunt, auch hier überlassen wir Ihnen die freie Wahl. Eines können Sie aber uns überlassen: Die Sorgen um die Gesundheit der Kinder. Denn natürlich sind all unsere Bälle streng geprüft und werden BPA- und schadstofffrei hergestellt. Wir achten in der Produktion darauf, dass die Bälle eine geeignete Größe haben und speichel– und schweißecht sind. Wie auch die restlichen Bestandteile des Bällebads sind die Bälle „Made in Germany“. Es ist uns ein persönliches Anliegen, für unsere Bällebäder nur Materialien zu verwenden, die für Säuglingsartikel geeignet sind. Diese Standards werden durch regelmäßige Produktkontrollen gewährleistet.<br/>Unsere Bälle gibt es in drei verschiedenen Größen: <br/>ø 6 cm Durchmesser, <br/>ø 7 cm Durchmesser und <br/>ø 8 cm Durchmesser. </p>
+						</div>
+						<div class="s-follow-us__col col-xl-3 col-lg-4"><img class="res-i" src="img/@2x/s-follow-us-3.png" alt=""/>
+							<h3> Spielen ohne Risiko</h3>
+							<h6>Wir garantieren höchste  Qualität und Sicherheit.</h6>
+							<p>In unseren Bällebädern kann man gefahrlos schwimmen, springen oder wühlen. Denn mit unseren zertifizierten, handgefertigten Bällen garantieren wir für höchste Qualität und Sicherheit. Bestätigt wird das auch durch die CE Prüfnummer. Unsere Bälle sind „Made in Germany“ und garantiert BPA- und schadstofffrei. Auch die verwendeten Textilien und Schaumstoffe werden in Deutschland hergestellt und sind nach Oeko-Tex Standard 100 zertifiziert. Es ist uns ein persönliches Anliegen, für unsere Bällebäder nur Materialien zu verwenden, die für Säuglingsartikel geeignet sind. Diese Standards werden durch regelmäßige Produktkontrollen gewährleistet.</p><img class="res-i" src="img/@2x/s-follow-us-4.png" alt=""/>
+						</div>
+						<div class="s-follow-us__col col-xl-3">
+							<h3>Bällebäder nach  Maßanfertigung</h3>
+							<h6>Sie möchten ein 3 Meter Pool? kein Problem!</h6>
+							<p>Sie träumen von einem Kindergeburtstag in einem Zimmer voller Bälle, durch das sich Ihre Kinder so richtig durchwühlen und reinspringen können? Kein Problem – wir liefern Ihnen die gewünschte Menge Bälle und holen sie nach Ihrem Event auch wieder ab.  Natürlich können auch einzelne Bällebecken tageweise von uns gemietet werden. Dieses Angebot umfasst kleine Ballpools im Durchmesser von 1,60 m bis hin zu großen Stahlrohrpools mit einem Durchmesser von 4,40 m. Wir helfen Ihnen gerne bei der Suche nach der richtigen Poolgröße für Ihr Event. Profitieren Sie von Deutschlands größter Ballauswahl und stellen Sie Ihr Bällebad mit aktuellen Trendfarben frei aus unserem Sortiment zusammen. Wir haben in unserem Lager mehr als zwei Millionen Bälle, die transportgerecht verpackt werden und sofort geliefert werden können. </p>
+							<p>Für größere Events bieten wir in Baden-Württemberg einen Aufbauservice an, der Ihnen beim Befüllen von Lagerhallen behilflich ist. Die Lieferung der Bälle erfolgt natürlich pünktlich am Veranstaltungsort und die Bälle kommen farblich sortiert bei Ihnen an.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end s-follow-us-->
+			<!-- start s-saving-->
+			<div class="s-saving section" id="s-saving">
+				<div class="container">
+					<div class="s-saving__inner">
+						<div class="s-saving__title">Unser Beitrag für eine bessere Umwelt.
+							<div class="strong">Save the world </div>
+						</div>
+						<div class="s-saving__row-wrap">
+							<div class="row">
+								<div class="s-saving__col col-lg-6">
+									<div class="row">
+										<div class="col-auto"><img class="res-i" src="img/@2x/save-1.png" alt=""/></div>
+										<div class="col">
+											<div class="title">Bälle aus Polyethylen </div>
+											<div class="text">100% recycelbar und frei von Weichmachern</div>
+										</div>
+									</div>
+								</div>
+								<div class="s-saving__col col-lg-6">
+									<div class="row">
+										<div class="col-auto"><img class="res-i" src="img/@2x/save-2.png" alt=""/></div>
+										<div class="col">
+											<div class="title">Überzug waschbar</div>
+											<div class="text">besteht aus 100% fein gezwirnter Baumwolle und ist bis zu 30°C waschbar</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="s-saving__card-col col-lg-4">
+							<div class="s-saving__item">
+								<div class="s-saving__icon-wrap"><img class="res-i" src="img/@2x/save-i-1.png" alt=""/>
+								</div>
+								<div class="h2"> 
+									<div class="strong">UNSER SERVICE </div>
+									<div class="fw-300">UNSERE LEISTUNGEN</div>
+								</div>
+							</div>
+						</div>
+						<div class="s-saving__card-col col-lg-4">
+							<div class="s-saving__item">
+								<div class="s-saving__icon-wrap"><img class="res-i" src="img/@2x/save-i-2.png" alt=""/>
+								</div>
+								<div class="h2"> 
+									<div class="strong">ALLE PRODUKTE  </div>
+									<div class="fw-300">REINE HANDARBEIT </div>
+								</div>
+								<p>Alle Bällebäder sind in Handarbeit hergestellt! Unser Produktionsort im Schwäbischen garantiert sorgsame Verarbeitung!</p>
+							</div>
+						</div>
+						<div class="s-saving__card-col col-lg-4">
+							<div class="s-saving__item">
+								<div class="s-saving__icon-wrap"><img class="res-i" src="img/@2x/save-i-3.png" alt=""/>
+								</div>
+								<div class="h2"> 
+									<div class="strong">UNSER ANSPRUCH:</div>
+									<div class="fw-300">HÖCHSTE QUALITÄT</div>
+								</div>
+								<p>Wir haben selber Kinder, darum liegt uns die tadellose Qualität unserer Produkte besonders am Herzen.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end s-saving-->
+			<!-- start s-soc-->
+			<section class="s-soc section" id="s-soc">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>
+							Folge  <span>Uns</span></h2>
+					</div>
+					<div class="row">
+						<div class="s-soc__col col-xl-3 col-lg-4 col-6"><img class="res-i object-fit-js" src="img/@2x/soc-1.jpg" alt=""/>
+						</div>
+						<div class="s-soc__col col-xl-3 col-lg-4 col-6"><img class="res-i object-fit-js" src="img/@2x/soc-2.jpg" alt=""/>
+						</div>
+						<div class="s-soc__col col-xl-3 col-lg-4 col-6"><img class="res-i object-fit-js" src="img/@2x/soc-3.jpg" alt=""/>
+						</div>
+						<div class="s-soc__col col-xl-3 col-lg-4 col-6"><img class="res-i object-fit-js" src="img/@2x/soc-4.jpg" alt=""/>
+						</div>
+						<div class="s-soc__col col-xl-3 col-lg-4 col-6"><img class="res-i object-fit-js" src="img/@2x/soc-5.jpg" alt=""/>
+						</div>
+						<div class="s-soc__col col-xl-3 col-lg-4 col-6"><img class="res-i object-fit-js" src="img/@2x/soc-6.jpg" alt=""/>
+						</div>
+						<div class="s-soc__col col-xl-3 col-lg-4 col-6"><img class="res-i object-fit-js" src="img/@2x/soc-7.jpg" alt=""/>
+						</div>
+						<div class="s-soc__col col-xl-3 col-lg-4 col-6"><img class="res-i object-fit-js" src="img/@2x/soc-8.jpg" alt=""/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end s-soc-->
 			<footer class="footer block-with-lazy">
 				<div class="container">
-					<h2>footer</h2>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="logo--shop block"><a class="logo--link" href="https://www.meinbaellebad.de/" title="meinbaellebad.de  - zur Startseite wechseln">
+									<picture>
+										<source srcset="https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png" media="(min-width: 78.75em)"/>
+										<source srcset="https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png" media="(min-width: 64em)"/>
+										<source srcset="https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png" media="(min-width: 48em)"/><img src="https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png" srcset="https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png" alt="meinbaellebad.de  - zur Startseite wechseln"/>
+									</picture></a></div>
+							<div class="soc"><a class="soc__item" href="№" target="_blank">
+								<svg class="icon icon-fb ">
+									<use xlink:href="img/svg/sprite.svg#fb"></use>
+								</svg></a><a class="soc__item" href="№" target="_blank">
+								<svg class="icon icon-inst ">
+									<use xlink:href="img/svg/sprite.svg#inst"></use>
+								</svg></a><a class="soc__item" href="№" target="_blank">
+								<svg class="icon icon-youtube ">
+									<use xlink:href="img/svg/sprite.svg#youtube"></use>
+								</svg></a><a class="soc__item" href="№" target="_blank">
+								<svg class="icon icon-twitter ">
+									<use xlink:href="img/svg/sprite.svg#twitter"></use>
+								</svg></a>
+							</div>
+						</div>
+						<div class="col">
+							<div class="row">
+								<div class="col d-none d-md-block">
+									<div class="column--headline">FARGEN & ANTWORTEN</div>
+									<nav class="column--navigation column--content">
+										<ul class="navigation--list" role="menu">
+											<li class="navigation--entry" role="menuitem"><a class="navigation--link" href="#" title=" "> Services</a></li>
+											<li class="navigation--entry" role="menuitem"><a class="navigation--link" href="#" title=" "> Unsere Garantien</a></li>
+											<li class="navigation--entry" role="menuitem"><a class="navigation--link" href="#" title=" "> Newsletter</a></li>
+											<li class="navigation--entry" role="menuitem"><a class="navigation--link" href="#" title=" "> Informieren und anmelden</a></li>
+											<li class="navigation--entry" role="menuitem"><a class="navigation--link" href="#" title=" "> Versand & Lieferung</a></li>
+											<li class="navigation--entry" role="menuitem"><a class="navigation--link" href="#" title=" "> Zahlungsarten</a></li>
+											<li class="navigation--entry" role="menuitem"><a class="navigation--link" href="#" title=" "> Rücknahmegarantie</a></li>
+											<li class="navigation--entry" role="menuitem"><a class="navigation--link" href="#" title=" "> Rückgabe & Erstattung</a></li>
+											<li class="navigation--entry" role="menuitem"><a class="navigation--link" href="#" title=" "> Hilfe & FAQs</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="col">
+									<div class="column--headline">KUNDENSERVICE</div>
+									<p class="column--desc">Noch Fragen? Schreib uns!<br/><a class="tdu text-secondary" href="#">Zum Kontaktformular</a></p>
+									<p class="column--desc">Oder ruf uns kostenlos an: <br/>0800 890 22 101<br/>Mo - Fr 9 - 13 und 14 - 17 Uhr</p>
+								</div>
+								<div class="col-xl d-none d-md-block">
+									<div class="row">
+										<div class="col-xl-12 col-lg-6">
+											<div class="column--headline">Newsletter?</div>
+											<p class="column--desc">Möchtest du immer gut Informiert werden?<br/>Abboniere unseren Newsletter!</p>
+										</div>
+										<div class="col-xl-12 col-lg-6">
+											<!-- / взял с сайта,-->
+											<form class="newsletter--form" action="https://www.meinbaellebad.de/newsletter" method="post">
+												<input type="hidden" value="1" name="subscribeToNewsletter"/>
+												<input class="newsletter--field" type="email" name="newsletter" placeholder="EMail Adresse"/>
+												<button class="newsletter--button btn" type="submit"> <span class="button--text">Senden</span></button>
+											</form>
+											<input type="hidden" name="__csrf_token" value="k5Un1tidPKcYRuSeJUnEvCSahDkAEn"/>
+											<div class="footer__polite">
+												<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><span class="custom-input__text"> Datenschutzerklärung</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__body-2 d-none d-lg-block">
+					<div class="container">
+						<div class="row">
+							<div class="footer__col-body col-4">
+								<div class="row">
+									<div class="col-auto"><img class="res-i" src="img/@2x/footer-i-1.png" alt=""/></div>
+									<div class="col">
+										<div class="title">Schnelle Lieferung</div>
+										<div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed </div>
+									</div>
+								</div>
+							</div>
+							<div class="footer__col-body col-4">
+								<div class="row">
+									<div class="col-auto"><img class="res-i" src="img/@2x/footer-i-2.png" alt=""/></div>
+									<div class="col">
+										<div class="title">Sicher bezahlen</div>
+										<div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed </div>
+									</div>
+								</div>
+							</div>
+							<div class="footer__col-body col-4">
+								<div class="row">
+									<div class="col-auto"><img class="res-i" src="img/@2x/footer-i-3.png" alt=""/></div>
+									<div class="col">
+										<div class="title">Geldzurück Garantie</div>
+										<div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__foot text-center">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-sm-auto col mb-1"><img class="res-i" src="img/@2x/pay-1.png" alt=""/></div>
+							<div class="col-sm-auto col mb-1"><img class="res-i" src="img/@2x/pay-2.png" alt=""/></div>
+							<div class="col-sm-auto col mb-1"><img class="res-i" src="img/@2x/pay-3.png" alt=""/></div>
+						</div>
+						<div class="text">© 2019 meinbällebad | Impressum | Datenschutz | AGB</div>
+					</div>
 				</div>
 			</footer>
 		</div>
@@ -149,7 +1433,7 @@
 					</div>
 					<!-- +e.input-wrap--><input class="form-wrap__btn" type="submit" value="Рассчитать"/>
 					<div class="form-wrap__polite">
-						<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+						<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><span class="custom-input__text"> Datenschutzerklärung</span>
 						</label>
 					</div>
 				</form>
@@ -164,10 +1448,9 @@
 		<!-- полифил для object-fit-->
 		<script src="libs/object-fit-images/ofi.min.js"></script>
 		<!-- modal libs-->
-		<script src="libs/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
 		<!-- modal libs-->
 		<!-- slider libs-->
-		<script src="libs/slick-carousel/slick/slick.min.js"></script>
+		<script src="libs/swiper/js/swiper.min.js"></script>
 		<!-- /slider libs-->
 		<!-- for svg libs-->
 		<script src="libs/svg4everybody/svg4everybody.min.js"></script>

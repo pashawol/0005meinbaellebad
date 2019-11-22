@@ -1,0 +1,131 @@
+.s-saving {
+padding-bottom: 0;
+	&__inner{
+		background-image: url(../img/@2x/save-bg.jpg);
+		@include media-breakpoint-up(sm) {
+
+			padding: rem(170) rem(15);
+		}
+		padding: rem(70) rem(15);
+		margin-bottom: rem(30);
+		@include bgs;
+	}
+		 
+	&__title{
+		@include media-breakpoint-up(xl) {
+			font-size: rem(47);
+			margin-bottom: rem(100);
+		}
+		@include rfs(rem(42));
+		margin-left: auto;
+		margin-right: auto;
+		max-width: rem(1100px);
+		margin-bottom: rem(30);
+		text-align: center;
+	}
+	&__row-wrap{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: rem(1200px);
+	}
+	&__col{
+		margin-bottom: rem(30);
+		.title{
+			font-weight: bold;
+		}
+		font-weight: 300;
+		@include media-breakpoint-up(sm) {
+
+			font-size: rem(26px);
+		}
+		font-size: 14px;
+		img{
+			max-width: rem(90);
+		}
+	}
+	&__item{
+		text-align: center;
+		color: #ffffff;
+		height: 100%;
+		text-align: center;
+		padding: rem(80) rem(15);
+		.h2{
+			margin-bottom: rem(37);
+		}
+	}
+	&__icon-wrap{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		width: rem(117px);
+		height: rem(117);
+		line-height:  rem(107);
+		vertical-align: middle;
+		border-radius: 50%;
+	margin-bottom: rem(20);
+	padding: rem(5);
+		img{
+			margin: 0;
+			margin-left: auto;
+			margin-right: auto;
+			display: inline;
+			max-width: rem(76);
+		}
+	}
+	&__card-col{
+		margin-bottom: 30px;
+	}
+	&__card-col:nth-child(1) &__item{
+		background-image:    linear-gradient(-34deg, rgba(250, 162, 28, 0.9) 0%, rgba(251, 181, 74, 0.9) 100%);
+	}
+	
+	&__card-col:nth-child(2) &__item{
+		background-image: linear-gradient(-34deg, rgba(255, 171, 183, 0.9) 0%, rgba(255, 217, 222, 0.9) 100%), linear-gradient(-34deg, rgba(227, 85, 159, 0.9) 0%, rgba(238, 125, 184, 0.9) 100%);
+	}
+	&__card-col:nth-child(3) &__item{
+		background-image:   linear-gradient(-34deg, rgba(126, 175, 224, 0.9) 0%, rgba(204, 221, 237, 0.9) 100%);
+	}
+	
+	&__card-col:nth-child(1) &__icon-wrap{
+		background-color: #f09322;
+	}
+	
+	&__card-col:nth-child(2) &__icon-wrap{
+		background-color: #e55da2;
+		padding-left: rem(5);
+	}
+	&__card-col:nth-child(3) &__icon-wrap{
+		background-color: #93aedb;
+	}
+
+	p{
+		font-size: rem(25);
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {
+		padding-top: 0;
+	} 
+
+}

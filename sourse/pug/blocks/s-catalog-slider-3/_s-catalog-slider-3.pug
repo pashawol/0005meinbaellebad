@@ -1,0 +1,45 @@
+mixin s-catalog-slider-3()
+	// start s-catalog-slider-3
+	+b.section-title--mobile.d-sm-none.text-center
+		h2.text-purple Pricess 
+			|
+			span BÄllebäder
+	+b.SECTION.s-catalog-slider-3.section(data-bg="img/@2x/bg-1.jpg")&attributes(attributes)
+		.container
+			+b.section-title.text-center.d-none.d-sm-block
+				h2.text-purple Pricess 
+					|
+					span BÄllebäder
+			+e.row-wrap
+				.row
+					.col-xl-4.col-md-6
+						+prod(5,"sl")
+					.col-xl-4.col-md-6.d-none.d-md-block
+						+prod(6,"sl")
+					.col-xl-4.col-md-6.d-none.d-xl-block
+						+prod(7,"sl")
+			.text-center
+				a.btn.btn-purple.btn-more(href="#") Alle ansehen
+	// end s-catalog-slider-3
+
+mixin s-catalog-slider-32()
+	// start s-catalog-slider-3
+ 
+	+b.SECTION.s-catalog-slider-3--weltall.section(data-bg="img/@2x/bg-2.jpg")&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2  Weltall 
+					|
+					span BÄllebäder
+			+e.row-wrap
+				.row
+					.col-xl-4.col-md-6
+						+prod(12,"sl")
+					.col-xl-4.col-md-6.d-none.d-md-block
+						+prod(13,"sl")
+					.col-xl-4.col-md-6.d-none.d-xl-block
+						+prod(14,"sl")
+			.text-center
+				a.btn.btn-dark.btn-more(href="#") Alle ansehen
+	// end s-catalog-slider-3
+

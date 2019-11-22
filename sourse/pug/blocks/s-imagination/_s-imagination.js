@@ -1,0 +1,5 @@
+JSCCommons-imagination();
+	s-imagination() {
+
+	}
+	

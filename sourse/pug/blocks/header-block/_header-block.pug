@@ -1,7 +1,13 @@
 mixin header-block()
 	// start header-block
 	+b.header-block#header-block
-		.container
-			h1 header-block
-			.row
+		+e.slider.one-slider--js.swiper-container
+			.swiper-wrapper
+				- for (var x = 1; x < 4; x++)
+					.swiper-slide
+						picture
+							source(media="(min-width: 768px)", srcset=`img/@2x/slide-${x}.jpg`)
+							source(media="(min-width: 440px)", srcset=`img/@2x/slide-${x}-md.jpg`)
+							img.object-fit-js(src=`img/@2x/slide-${x}-sm.jpg`   alt="")
+			.swiper-pagination
 	// end header-block

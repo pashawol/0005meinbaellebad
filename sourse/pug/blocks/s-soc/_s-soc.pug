@@ -1,0 +1,14 @@
+mixin s-soc()
+	// start s-soc
+	+b.SECTION.s-soc.section#s-soc&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Folge 
+					| 
+					span Uns
+				
+			.row
+				- for (var x = 1; x < 9; x++)
+					+e.col.col-xl-3.col-lg-4.col-6
+						img.res-i.object-fit-js(src=`img/@2x/soc-${x}.jpg`, alt="")
+	// end s-soc

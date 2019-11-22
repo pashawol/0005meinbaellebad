@@ -1,0 +1,21 @@
+mixin s-steps()
+	// start s-steps
+	+b.SECTION.s-steps#s-steps&attributes(attributes)
+		.container
+			+e.inner.section
+				+b.section-title.text-center
+					h2 erstelle dir dein eigenes 
+						| 
+						span Bällebad!
+				.row
+					.col-md-4: +e.item
+						+e.title Auswahl Bällebad
+						p Wähle zuerst ein aus unserer unvergleichbaren Stoffauswahl eine Farbe aus.
+					.col-md-4: +e.item
+						+e.title Auswahl Bällebad
+						p Wähle bis zu 5 Farben aus  unserem Sortiment aus.
+					.col-md-4: +e.item
+						+e.title Auswahl Bällebad
+						p Die Lieferung erfolgt in 1-2 Tagen zu dir nach Hause!
+				a.btn.btn-blue.bdr-0(href="#") Hier gehts zum konfigurator
+	// end s-steps

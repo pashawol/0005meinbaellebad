@@ -1,0 +1,5 @@
+JSCCommons-soc();
+	s-soc() {
+
+	}
+	

@@ -1,7 +1,118 @@
 .footer {
 		
+  .logo--shop.block{
+    float: none;
+    margin-bottom: rem(50);
+  }
+  .column--headline{
+    font-weight: 700;
+text-transform: uppercase;
+// Text style for "FARGEN & A"
+letter-spacing: 0.11px;
+color: $primary;
+text-transform: uppercase;
+margin-bottom: rem(30);
+  }
+  nav{
+    a{
+      color: $secondary; 
+      font-size: rem(18px);
+      font-weight: 400;
+      line-height: 2.17;
+    }
+  }
 
+  .column--desc{
+    color: $secondary; 
+    font-size: rem(18px);
+    font-weight: 400;
+    line-height: 2.17;
+  }
+  .newsletter--field{
+    border-radius: 28px;
+    // border: 3px solid $primary;
+    box-shadow: none !important;
+    width: 100%;
+    padding-right: rem(140);
+  }
+  .newsletter--form{
+    border-radius: 28px;
+    border: 3px solid $primary;
+    position: relative;
+  }
+  .btn{
+    @extend .btn-primary;
+    @extend .btn;
+    width: rem(132);
+    padding-left: 0 ;
+    padding-right: 0;
+    position: absolute;
+    padding: rem(13) rem(5);
+    right: rem(-5);
+    top: rem(-2);
+    font-size: rem(18);
+  }
+  .column--content{
+    margin-bottom: rm(30);
+  }
+  &__body-2{
+    .container{
+      border-top: 4px solid #e4eef8;
+      padding-top: rem(52);
+      padding-bottom: rem(50);
+    }
+    .title{
+      color: #98aec4; 
+      font-weight: 700;
+      // Text style for "Schnelle L"
+      letter-spacing: 0.11px;
+    }
+    .text{
+      color: $secondary;
+      font-family: "Open Sans";
+      font-size: rem(18px);
+      font-weight: 400;
+      line-height: 1.33;
+      max-width: rem(300);
+    }
+  }
+  &__col-body{
+      &:not(:last-child){
+        &::after{
+          content: '';
+          position: absolute;
+          right:  rem(30);
+          top: 0;
+          width: rem(4px);
+          height: rem(74px);
+          background-color: #e4eef8;
+        }
+      }
+  }
 
+  &__foot{
+    background-color: #e4eef8;
+    @include media-breakpoint-up(sm) {
+
+      font-size: rem(18); 
+    }
+    font-size: rem(12); 
+    color: #73777c; 
+    font-weight: 400;
+    line-height: 0.89;
+    // Text style for "© 2019 mei"
+    letter-spacing: 0.9px;
+    @include media-breakpoint-up(sm) {
+
+      padding-top: rem(100);
+      padding-bottom: rem(70);
+    }
+    padding-top: rem(100 / 2);
+    padding-bottom: rem(70 / 2);
+    .text{
+      padding-top: rem(30);
+    }
+  }
 // 
 @include media-breakpoint-up(xl) {}
 
@@ -37,7 +148,18 @@
 
 @include media-breakpoint-down(md) {}
 
-@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(sm) {
+  .logo--shop.block{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 159px;
+    margin-bottom: 18px;
+  }
+  .soc{
+    margin-bottom: rem(60);
+  }
+  text-align: center;
+}
 
 @include media-breakpoint-down(xs) {}
 }

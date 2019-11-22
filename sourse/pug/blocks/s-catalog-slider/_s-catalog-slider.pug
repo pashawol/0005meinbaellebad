@@ -1,0 +1,73 @@
+
+mixin s-catalog-slider()
+	// start s-catalog-slider
+	+b.SECTION.s-catalog-slider.section&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Runde
+					|  
+					span BÄllebäder
+			+e.slider-4.slider-4--js.swiper-container.not-mobile
+				.swiper-wrapper
+					- for (var x = 1; x < 4; x++)
+						.swiper-slide
+							+prod(x)
+				.swiper-pagination
+			.d-md-none.text-center
+				a.btn.btn-dark(href="#") Alle Bestseller
+	// end s-catalog-slider
+
+mixin s-catalog-slider2()
+	// start s-catalog-slider
+	+b.SECTION.s-catalog-slider.section&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Eckige 
+					|  
+					span BÄllebäder
+			+e.slider-4.slider-4--js.swiper-container.not-mobile
+				.swiper-wrapper
+					- for (var x = 8; x < 12; x++)
+						.swiper-slide
+							+prod(x)
+				.swiper-pagination
+			.d-md-none.text-center
+				a.btn.btn-dark(href="#") Alle Bestseller
+	// end s-catalog-slider
+
+mixin s-catalog-slider3()
+	// start s-catalog-slider
+	+b.SECTION.s-catalog-slider.section&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 unvergleichbare 
+					|  
+					span stoffauswahl
+			+e.slider-4.slider-4--js.swiper-container.not-mobile
+				.swiper-wrapper
+					- for (var x = 8; x < 12; x++)
+						.swiper-slide
+							+prod(x)
+				.swiper-pagination
+			.d-md-none.text-center
+				a.btn.btn-dark(href="#") Alle Bestseller
+	// end s-catalog-slider
+
+mixin s-catalog-slider4()
+	// start s-catalog-slider
+	+b.SECTION.s-catalog-slider.section&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Einzel
+					|  
+					span  BÄlle
+			+e.slider-4.slider-4--js.swiper-container.not-mobile
+				.swiper-wrapper
+					- for (var x = 15; x < 19; x++)
+						.swiper-slide
+							+prod(x)
+				.swiper-pagination
+			.d-md-none.text-center
+				a.btn.btn-dark(href="#") Alle Bestseller
+	// end s-catalog-slider
+

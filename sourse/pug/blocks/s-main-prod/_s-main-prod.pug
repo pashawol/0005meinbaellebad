@@ -1,0 +1,11 @@
+mixin s-main-prod()
+	// start s-main-prod
+	+b.s-main-prod#s-main-prod&attributes(attributes)
+		.container
+			.row
+				- for (var x = 1; x <= 3; x++)
+					+e.col.col-md-4
+						a(href="#")
+							+pic(`cat-${x}`,'','lazy',0)
+			
+	// end s-main-prod

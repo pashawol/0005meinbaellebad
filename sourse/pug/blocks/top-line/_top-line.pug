@@ -2,5 +2,34 @@ mixin top-line()
 	// start .top-line
 	+b.top-line.block-with-lazy
 		.container
-			.row top-line
+			.row
+				.col-auto
+					ul
+						li.d-none.d-md-block
+							a(href="tel:+49(0)7471-933197-15")
+								+icon("tel")
+								| +49 (0) 7471-933197-15 
+						li  Mo–Fr: 8.00–17.30 Uhr
+						li.d-none.d-md-block
+							a(href="#") kurze Lieferzeiten
+				.col-auto
+					form.sub-shop--form(method='post')
+						.field--select
+						ul
+							li
+								a(href="#") Kontakt 
+							li
+								.language--item 
+									input#shop_1.language--select(type='radio', value='1', checked='checked', name='__shop', data-auto-submit='true')
+									label(for='shop_1') 
+										- var te = 'GER'
+										span.language--text= te
+							li
+								.language--item 
+									input#shop_3.language--select(type='radio', value='3', name='__shop', data-auto-submit='true')
+									label(for='shop_3') 
+										span.language--text     ENG
+								input(type='hidden', name='__redirect', value='1')
+								
+								input(type='hidden', name='__csrf_token', value='k5Un1tidPKcYRuSeJUnEvCSahDkAEn')
 	// end .top-line

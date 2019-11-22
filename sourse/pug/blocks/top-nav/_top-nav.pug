@@ -1,19 +1,75 @@
 
 mixin mob-mnu()
-	+b.toggle-menu-mobile--js.d-lg-none
-		span
+	//- +b.toggle-menu-mobile--js.d-lg-none
+	//- 	span
 	+b.menu-mobile--js.d-lg-none
 		+b.toggle-menu-mobile--js
 			span
 		+e.inner
 		
 			+mnu()
-			.text-right
+			+e.btn-wrap
+				+e.btn.btn-link(href="#") Einloggen
+				+e.btn.btn-primary(href="#") Registrieren
+			+e.btn-wrap
+				+e.btn-icon(type="button")
+					img(src="img/@2x/head-i-1.png", alt="")
+					| Favoriten
+				
+				+e.btn-icon(type="button")
+					img(src="img/@2x/head-i-2.png", alt="")
+					| Nachricht
+				
+				+e.btn-icon(type="button") Suchen
 	//  мобильное меню
 mixin top-nav() 
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
-			+mnu()
-					
+			.row
+				.col-auto.d-lg-none
+					+b.toggle-menu-mobile--js
+						span
+				.col-xl-auto.col-lg.col-auto
+					//- взял с сайта
+					.logo--shop.block
+						a.logo--link(href='https://www.meinbaellebad.de/', title='meinbaellebad.de  - zur Startseite wechseln')
+							picture
+								source(srcset='https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png', media='(min-width: 78.75em)')
+								source(srcset='https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png', media='(min-width: 64em)')
+								source(srcset='https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png', media='(min-width: 48em)')
+								img(src="https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png" srcset='https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png', alt='meinbaellebad.de  - zur Startseite wechseln')
+				+e.col-inner.col-auto.d-none.d-lg-flex
+					+e.btn.btn-link(href="#") Einloggen
+					+e.btn.btn-primary(href="#") Registrieren
+				.col-auto.d-lg-none
+					+e.btn-icon(type="button")
+						img(src="img/@2x/head-i-3.png", alt="")
+				.col-xl.d-none.d-lg-block
+					+mnu()
+					+e.search-wrap.row
+						.col
+							//- взял с сайта
+							.navigation--entry.entry--search(  data-search='true', aria-haspopup='true', data-minlength='3')
+								a.btn.entry--link.entry--trigger(href='#show-hide--search', title='Suche anzeigen / schließen')
+									i.icon--search
+									span.search--display Suchen
+								form.main-search--form(action='/search', method='get')
+									input.main-search--field(type='search', name='sSearch', autocomplete='off', autocapitalize='off', placeholder='Suchen', maxlength='30')
+									button.main-search--button(type='submit')
+										//- i.icon--search
+										//- span.main-search--text Suchen
+									.form--ajax-loader  
+								.main-search--results
+						.col-auto
+							+e.btn-wrap
+								+e.btn-icon(type="button")
+									img(src="img/@2x/head-i-1.png", alt="")
+								
+								+e.btn-icon(type="button")
+									img(src="img/@2x/head-i-2.png", alt="")
+								
+								+e.btn-icon(type="button")
+									img(src="img/@2x/head-i-3.png", alt="")
+								
 	// end top-nav

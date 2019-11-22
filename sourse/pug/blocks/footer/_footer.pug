@@ -1,4 +1,114 @@
 mixin footer()
 	+b.FOOTER.footer.block-with-lazy
 		.container
-			h2 footer
+			.row
+				.col-md-3
+					//- взял с сайта
+					.logo--shop.block
+						a.logo--link(href='https://www.meinbaellebad.de/', title='meinbaellebad.de  - zur Startseite wechseln')
+							picture
+								source(srcset='https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png', media='(min-width: 78.75em)')
+								source(srcset='https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png', media='(min-width: 64em)')
+								source(srcset='https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png', media='(min-width: 48em)')
+								img(src="https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png" srcset='https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png', alt='meinbaellebad.de  - zur Startseite wechseln')
+					+soc()
+				.col
+					.row
+						.col.d-none.d-md-block
+							.column--headline FARGEN & ANTWORTEN
+							nav.column--navigation.column--content
+								ul.navigation--list(role='menu')
+									li.navigation--entry(role='menuitem')
+										a.navigation--link(href='#', title=' ')
+											|  Services
+									li.navigation--entry(role='menuitem')
+										a.navigation--link(href='#', title=' ')
+											|  Unsere Garantien
+									li.navigation--entry(role='menuitem')
+										a.navigation--link(href='#', title=' ')
+											|  Newsletter
+									li.navigation--entry(role='menuitem')
+										a.navigation--link(href='#', title=' ')
+											|  Informieren und anmelden
+									li.navigation--entry(role='menuitem')
+										a.navigation--link(href='#', title=' ')
+											|  Versand & Lieferung
+									li.navigation--entry(role='menuitem')
+										a.navigation--link(href='#', title=' ')
+											|  Zahlungsarten
+									li.navigation--entry(role='menuitem')
+										a.navigation--link(href='#', title=' ')
+											|  Rücknahmegarantie
+									li.navigation--entry(role='menuitem')
+										a.navigation--link(href='#', title=' ')
+											|  Rückgabe & Erstattung
+									li.navigation--entry(role='menuitem')
+										a.navigation--link(href='#', title=' ')
+											|  Hilfe & FAQs
+
+									
+
+						.col
+							.column--headline KUNDENSERVICE
+							p.column--desc Noch Fragen? Schreib uns!
+								br
+								a.tdu.text-secondary(href="#") Zum Kontaktformular
+
+							p.column--desc Oder ruf uns kostenlos an: 
+								br
+								| 0800 890 22 101
+								br
+								| Mo - Fr 9 - 13 und 14 - 17 Uhr
+						.col-xl.d-none.d-md-block
+							.row
+								.col-xl-12.col-lg-6
+									.column--headline Newsletter?
+									p.column--desc Möchtest du immer gut Informiert werden?
+										br
+										| Abboniere unseren Newsletter!
+								.col-xl-12.col-lg-6
+									// / взял с сайта,
+									form.newsletter--form(action='https://www.meinbaellebad.de/newsletter', method='post')
+										input(type='hidden', value='1', name='subscribeToNewsletter')
+									
+										input.newsletter--field(type='email', name='newsletter', placeholder='EMail Adresse')
+										button.newsletter--button.btn(type='submit') 
+											span.button--text Senden
+									input(type='hidden', name='__csrf_token', value='k5Un1tidPKcYRuSeJUnEvCSahDkAEn')
+									+polite
+		+e.body-2.d-none.d-lg-block
+			.container
+				.row
+					+e.col-body.col-4
+						.row
+							.col-auto
+								img.res-i(src="img/@2x/footer-i-1.png", alt="")
+							.col
+								.title Schnelle Lieferung
+								.text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
+					
+					+e.col-body.col-4
+						.row
+							.col-auto
+								img.res-i(src="img/@2x/footer-i-2.png", alt="")
+							.col
+								.title Sicher bezahlen
+								.text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
+					
+					+e.col-body.col-4
+						.row
+							.col-auto
+								img.res-i(src="img/@2x/footer-i-3.png", alt="")
+							.col
+								.title Geldzurück Garantie
+								.text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
+		+e.foot.text-center
+			.container
+				.row.justify-content-center
+					.col-sm-auto.col.mb-1
+						img.res-i(src="img/@2x/pay-1.png", alt="")
+					.col-sm-auto.col.mb-1
+						img.res-i(src="img/@2x/pay-2.png", alt="")
+					.col-sm-auto.col.mb-1
+						img.res-i(src="img/@2x/pay-3.png", alt="")
+				.text © 2019 meinbällebad | Impressum | Datenschutz | AGB

@@ -1,6 +1,6 @@
 
 
-$em-base: 16px;
+$em-base: 20px;
 $small: rem(14);
 $url: '../img/';
 $path2: '@2x/';
@@ -24,9 +24,9 @@ $black:    #000 !default;
 $grays: () !default;
 
 
-$blue:    #007bff !default;
+$blue:    #7691be !default;
 $indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
+$purple:  #7f73a4 !default;
 $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
@@ -40,25 +40,32 @@ $colors: () !default;
 $colors: map-merge(  ( ),  $colors);
 
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #e3559f !default;
+$secondary:     #b6b5b5 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
+$gray:          #696969 !default;
+$dark:          #06060c !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
+    "blue":    $blue,
     "primary":    $primary,
+    "purple":    $purple,
     "secondary":  $secondary,
+    "gray":  $gray,
     "success":    $success,
+    "dark":    $dark,
     // "info":       $info,
     // "warning":    $warning,
     "danger":     $danger,
+    "white":     $white,
     // "light":      $light,
     // "dark":       $dark
   ),
@@ -66,7 +73,7 @@ $theme-colors: map-merge(
 );
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                #262525 !default;
 
 // Typography
 //
@@ -85,7 +92,8 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  // xxl: 1400px
+  xll: 1330px,
+  xxl: 1800px
 ) !default; 
 
 // Grid containers
@@ -98,7 +106,8 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  // xxl: 1340px
+  xll: 1300px,
+  xxl: 1770px
 ) !default; 
 // Grid columns
 //
@@ -127,7 +136,7 @@ $line-height-base:            1.5 !default;
 
 // title 
 $h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
+$h2-font-size:                rem(40) !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
@@ -208,12 +217,13 @@ $table-caption-color:         $text-muted !default;
 $table-bg-level:              -9 !default;
 $table-border-level:          -6 !default;
 
-
+$border-radius:  rem(40) !default;
+$border-radius-sm:  rem(40) !default;
 // Buttons + Forms
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
+$input-btn-padding-y:         .65rem !default;
 $input-btn-padding-x:         .75rem !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
@@ -258,7 +268,7 @@ $btn-font-size-lg:            $input-btn-font-size-lg !default;
 
 // $btn-border-width:            $input-btn-border-width !default;
 
-$btn-font-weight:             $font-weight-normal !default;
+$btn-font-weight:             bold !default;
 $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
 $btn-focus-width:             $input-btn-focus-width !default;
 // $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
@@ -270,9 +280,9 @@ $btn-link-disabled-color:     $gray-600 !default;
 $btn-block-spacing-y:         .5rem !default;
 
 // Allows for customizing button radius independently from global border radius
-// $btn-border-radius:           $border-radius !default;
+$btn-border-radius:           $border-radius !default;
 // $btn-border-radius-lg:        $border-radius-lg !default;
-// $btn-border-radius-sm:        $border-radius-sm !default;
+$btn-border-radius-sm:        $border-radius-sm !default;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 

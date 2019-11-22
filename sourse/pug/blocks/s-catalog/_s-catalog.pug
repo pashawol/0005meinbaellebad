@@ -1,0 +1,36 @@
+mixin s-catalog()
+	// start s-catalog
+	+b.SECTION.s-catalog.section#s-catalog&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Unsere 
+					| 
+					span  Bestseller
+					
+				
+			+e.slider-3.one-slider--js.swiper-container
+				.swiper-wrapper
+					- for (var x = 1; x < 4; x++)
+						.swiper-slide
+							.row
+								.col-md-6
+									+e.card-wrap
+										+b.btn-like.active(type="button")
+											+icon("like")
+										a(href="#")
+											img.object-fit-js(src=`img/@2x/prod-sl-1.jpg`   alt="")
+								.col-md-6.d-flex.flex-column.justify-content-between 
+									+e.card-wrap
+										+b.btn-like(type="button")
+											+icon("like")
+										a(href="#")
+											img.object-fit-js(src=`img/@2x/prod-sl-2.jpg`   alt="")
+									+e.card-wrap
+										+b.btn-like(type="button")
+											+icon("like")
+										a(href="#")
+											img.object-fit-js(src=`img/@2x/prod-sl-3.jpg`   alt="")
+				.swiper-pagination.d-none.d-md-block
+			.d-md-none.text-center
+				a.btn.btn-dark(href="#") Alle Bestseller
+	// end s-catalog

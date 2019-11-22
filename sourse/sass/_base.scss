@@ -17,23 +17,62 @@ html {
 }  
 body,
 html {
-	font-size: $em-base;
+	@include media-breakpoint-up(xxl) {
+
+		font-size: $em-base;
+	}
+	
+	@include media-breakpoint-up(sm) {
+
+		// font-size: $em-base;
+		font-size: 16px;
+	}
+	font-size: 14px;
+
+
+	// font-size: $em-base;
 	// @include font-size(1rem);
 } 
 .section { 
 	@include bgs; 
-		padding-top: rem(40px);
-		padding-bottom: rem(40px); 
+		padding-top: rem(80);
+		padding-bottom: rem(50); 
 }
 
 .section-title {
-	@extend .h2;
-	padding-bottom: em(10); 
+	@extend .h2; 
+	position: relative;
+	z-index: 2;
+	margin-bottom: rem(60);
+	&::before{
+		content: '';
+		position: absolute;
+		@include a-cent;
+		height: 1px;
+		width: 100%;
+		margin-top: rem(-5);
+		background-color: $body-color;
+	}
 	>h2 {
-		font-size: inherit;
+		// font-size: inherit;
+		display: inline-block;
+		font-weight: bold;
+		text-transform: uppercase;
+		position: relative;
+		background-color: #ffffff;
+		padding-left: rem(20);
+		padding-right: rem(20);
+
+		span{
+			font-weight: 300;
+		}
 		
 		@include media-breakpoint-up(md) {}
 	}
+}
+
+.section-title--mobile{
+	// padding-top: rem(20);
 }
 
 body {
@@ -96,7 +135,12 @@ body {
 }
 
 
-.main-wrapper {position: relative;overflow: hidden;height: 100%;}
+.main-wrapper {position: relative;overflow: hidden;height: 100%;
+	font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	.container{
+		background-color: transparent;
+	}
+}
 
 .slick-slide img {
 	display: inline
@@ -379,10 +423,10 @@ input::-webkit-inner-spin-button {
 	text-align: center;
 	&-bullet{
 		opacity: 1;
-		width: 8px;
-		height: 8px;
+		width: 11px;
+		height: 11px;
 		border-radius: 50%;
-		background-color: $secondary;
+		background-color: #e4eef8;
 		outline: none !important;
 		@include mt;
 		margin-left: rem(8);
@@ -449,3 +493,21 @@ a{
 }
 
 // .pagination-wrapper li
+
+.btn{
+	padding-left: rem(40);
+	padding-right: rem(40);
+	&:active{
+
+		box-shadow: none !important;
+	}
+	text-transform: uppercase;
+}
+.bdr-0{
+	border-radius: 0;
+}
+
+.btn-more{
+	border-radius: 0;
+	min-width: 152px;
+}
