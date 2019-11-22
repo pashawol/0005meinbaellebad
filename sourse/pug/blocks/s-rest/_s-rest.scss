@@ -16,7 +16,7 @@
 		@include rfs(rem(42));
 		margin-left: auto;
 		margin-right: auto;
-		max-width: 1200px;
+		max-width: rem(1250px);
 		margin-bottom: rem(30);
 	}
 	&__btn{

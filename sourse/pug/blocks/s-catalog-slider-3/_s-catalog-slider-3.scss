@@ -1,4 +1,8 @@
 .s-catalog-slider-3 {
+
+	.btn-more{
+		z-index: 10;
+	}
 	@include media-breakpoint-up(sm) {
 
 		padding-top: rem(100);

@@ -65,6 +65,10 @@ padding-bottom: 0;
     padding: 0;
     color: #272727 !important;
     font-size: rem(16);
+    display: inline;
+  }
+  .language--item{
+    margin: 0;
   }
 // 
 @include media-breakpoint-up(xl) {}

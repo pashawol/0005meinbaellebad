@@ -30,8 +30,8 @@
 
   @include media-breakpoint-down(lg) {
 
-    display: flex;
-    flex-direction: column-reverse;
+    // display: flex;
+    // flex-direction: column-reverse;
   }
 
   @include media-breakpoint-down(md) {}

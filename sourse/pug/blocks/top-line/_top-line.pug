@@ -14,22 +14,24 @@ mixin top-line()
 							a(href="#") kurze Lieferzeiten
 				.col-auto
 					form.sub-shop--form(method='post')
+						// изменио вложенность
 						.field--select
-						ul
-							li
-								a(href="#") Kontakt 
-							li
-								.language--item 
-									input#shop_1.language--select(type='radio', value='1', checked='checked', name='__shop', data-auto-submit='true')
-									label(for='shop_1') 
-										- var te = 'GER'
-										span.language--text= te
-							li
-								.language--item 
-									input#shop_3.language--select(type='radio', value='3', name='__shop', data-auto-submit='true')
-									label(for='shop_3') 
-										span.language--text     ENG
-								input(type='hidden', name='__redirect', value='1')
-								
-								input(type='hidden', name='__csrf_token', value='k5Un1tidPKcYRuSeJUnEvCSahDkAEn')
+							ul
+								li.d-none.d-lg-block
+									a(href="#") Kontakt 
+								li
+									.language--item 
+										input#shop_1.language--select(type='radio', value='1', checked='checked', name='__shop', data-auto-submit='true')
+										label(for='shop_1') 
+											- var te = 'GER'
+											span.language--text= te
+								li
+									.language--item 
+										input#shop_3.language--select(type='radio', value='3', name='__shop', data-auto-submit='true')
+										label(for='shop_3') 
+											// убрал отступы
+											span.language--text ENG
+									input(type='hidden', name='__redirect', value='1')
+									
+									input(type='hidden', name='__csrf_token', value='k5Un1tidPKcYRuSeJUnEvCSahDkAEn')
 	// end .top-line

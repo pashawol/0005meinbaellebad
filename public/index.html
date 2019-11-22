@@ -43,25 +43,29 @@
 							</div>
 							<div class="col-auto">
 								<form class="sub-shop--form" method="post">
-									<div class="field--select"></div>
-									<ul>
-										<li><a href="#">Kontakt </a></li>
-										<li>
-											<div class="language--item"> 
-												<input class="language--select" id="shop_1" type="radio" value="1" checked="checked" name="__shop" data-auto-submit="true"/>
-												<label for="shop_1"> <span class="language--text">GER</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="language--item"> 
-												<input class="language--select" id="shop_3" type="radio" value="3" name="__shop" data-auto-submit="true"/>
-												<label for="shop_3"> <span class="language--text">    ENG</span></label>
-											</div>
-											<input type="hidden" name="__redirect" value="1"/>
-											<input type="hidden" name="__csrf_token" value="k5Un1tidPKcYRuSeJUnEvCSahDkAEn"/>
-										</li>
-									</ul>
+									<!-- изменио вложенность-->
+									<div class="field--select">
+										<ul>
+											<li class="d-none d-lg-block"><a href="#">Kontakt </a></li>
+											<li>
+												<div class="language--item"> 
+													<input class="language--select" id="shop_1" type="radio" value="1" checked="checked" name="__shop" data-auto-submit="true"/>
+													<label for="shop_1"> <span class="language--text">GER</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="language--item"> 
+													<input class="language--select" id="shop_3" type="radio" value="3" name="__shop" data-auto-submit="true"/>
+													<label for="shop_3"> 
+														<!-- убрал отступы--><span class="language--text">ENG</span>
+													</label>
+												</div>
+												<input type="hidden" name="__redirect" value="1"/>
+												<input type="hidden" name="__csrf_token" value="k5Un1tidPKcYRuSeJUnEvCSahDkAEn"/>
+											</li>
+										</ul>
+									</div>
 								</form>
 							</div>
 						</div>
@@ -1160,7 +1164,7 @@
 				<div class="container">
 					<div class="s-rest__inner">
 						<div class="s-rest__title">
-							Kindergeburtstage, Firmenevents oder Messeauftritte?<strong>Bällebäder zum Vermieten </strong>
+							Kindergeburtstage, Firmenevents oder Messeauftritte?  <strong>Bällebäder zum Vermieten </strong>
 						</div><a class="s-rest__btn" href="#">Kontakt Aufnehmen</a>
 					</div>
 				</div>
