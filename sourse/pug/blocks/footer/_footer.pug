@@ -2,7 +2,7 @@ mixin footer()
 	+b.FOOTER.footer.block-with-lazy
 		.container
 			.row
-				.col-md-3
+				.bootstrap-col-md-3
 					//- взял с сайта
 					.logo--shop.block
 						a.logo--link(href='https://www.meinbaellebad.de/', title='meinbaellebad.de  - zur Startseite wechseln')
@@ -12,11 +12,11 @@ mixin footer()
 								source(srcset='https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png', media='(min-width: 48em)')
 								img(src="https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png" srcset='https://www.meinbaellebad.de/media/image/5c/09/2a/logo589a68835fd2a.png', alt='meinbaellebad.de  - zur Startseite wechseln')
 					+soc()
-				.col
+				.bootstrap-col
 					.row
-						.col.d-none.d-md-block
-							.column--headline FARGEN & ANTWORTEN
-							nav.column--navigation.column--content
+						.bootstrap-col.d-none.d-md-block
+							.bootstrap-column--headline FARGEN & ANTWORTEN
+							nav.bootstrap-column--navigation.bootstrap-column--content
 								ul.navigation--list(role='menu')
 									li.navigation--entry(role='menuitem')
 										a.navigation--link(href='#', title=' ')
@@ -48,25 +48,25 @@ mixin footer()
 
 									
 
-						.col
-							.column--headline KUNDENSERVICE
-							p.column--desc Noch Fragen? Schreib uns!
+						.bootstrap-col
+							.bootstrap-column--headline KUNDENSERVICE
+							p.bootstrap-column--desc Noch Fragen? Schreib uns!
 								br
 								a.tdu.text-secondary(href="#") Zum Kontaktformular
 
-							p.column--desc Oder ruf uns kostenlos an: 
+							p.bootstrap-column--desc Oder ruf uns kostenlos an: 
 								br
 								| 0800 890 22 101
 								br
 								| Mo - Fr 9 - 13 und 14 - 17 Uhr
-						.col-xl.d-none.d-md-block
+						.bootstrap-col-xl.d-none.d-md-block
 							.row
-								.col-xl-12.col-lg-6
-									.column--headline Newsletter?
-									p.column--desc Möchtest du immer gut Informiert werden?
+								.bootstrap-col-xl-12.bootstrap-col-lg-6
+									.bootstrap-column--headline Newsletter?
+									p.bootstrap-column--desc Möchtest du immer gut Informiert werden?
 										br
 										| Abboniere unseren Newsletter!
-								.col-xl-12.col-lg-6
+								.bootstrap-col-xl-12.bootstrap-col-lg-6
 									// / взял с сайта,
 									form.newsletter--form(action='https://www.meinbaellebad.de/newsletter', method='post')
 										input(type='hidden', value='1', name='subscribeToNewsletter')
@@ -79,36 +79,36 @@ mixin footer()
 		+e.body-2.d-none.d-lg-block
 			.container
 				.row
-					+e.col-body.col-4
+					+e.bootstrap-col-body.bootstrap-col-4
 						.row
-							.col-auto
+							.bootstrap-col-auto
 								img.res-i(src="img/@2x/footer-i-1.png", alt="")
-							.col
+							.bootstrap-col
 								.title Schnelle Lieferung
 								.text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
 					
-					+e.col-body.col-4
+					+e.bootstrap-col-body.bootstrap-col-4
 						.row
-							.col-auto
+							.bootstrap-col-auto
 								img.res-i(src="img/@2x/footer-i-2.png", alt="")
-							.col
+							.bootstrap-col
 								.title Sicher bezahlen
 								.text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
 					
-					+e.col-body.col-4
+					+e.bootstrap-col-body.bootstrap-col-4
 						.row
-							.col-auto
+							.bootstrap-col-auto
 								img.res-i(src="img/@2x/footer-i-3.png", alt="")
-							.col
+							.bootstrap-col
 								.title Geldzurück Garantie
 								.text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
 		+e.foot.text-center
 			.container
 				.row.justify-content-center
-					.col-sm-auto.col.mb-1
+					.bootstrap-col-sm-auto.bootstrap-col.mb-1
 						img.res-i(src="img/@2x/pay-1.png", alt="")
-					.col-sm-auto.col.mb-1
+					.bootstrap-col-sm-auto.bootstrap-col.mb-1
 						img.res-i(src="img/@2x/pay-2.png", alt="")
-					.col-sm-auto.col.mb-1
+					.bootstrap-col-sm-auto.bootstrap-col.mb-1
 						img.res-i(src="img/@2x/pay-3.png", alt="")
 				.text © 2019 meinbällebad | Impressum | Datenschutz | AGB

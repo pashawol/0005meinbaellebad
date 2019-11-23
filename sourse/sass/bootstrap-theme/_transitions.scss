@@ -6,13 +6,13 @@
   }
 }
 
-.collapse {
+.bootstrap-collapse {
   &:not(.show) {
     display: none;
   }
 }
 
-.collapsing {
+.bootstrap-collapsing {
   position: relative;
   height: 0;
   overflow: hidden;

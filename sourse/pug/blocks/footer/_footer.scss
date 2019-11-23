@@ -8,7 +8,7 @@
     float: none;
     margin-bottom: rem(50);
   }
-  .column--headline{
+  .bootstrap-column--headline{
     font-weight: 700;
 text-transform: uppercase;
 // Text style for "FARGEN & A"
@@ -26,7 +26,7 @@ margin-bottom: rem(30);
     }
   }
 
-  .column--desc{
+  .bootstrap-column--desc{
     color: $secondary; 
     font-size: rem(18px);
     font-weight: 400;
@@ -56,7 +56,7 @@ margin-bottom: rem(30);
     top: rem(-2);
     font-size: rem(18);
   }
-  .column--content{
+  .bootstrap-column--content{
     margin-bottom: rem(30);
   }
   &__body-2{
@@ -80,7 +80,7 @@ margin-bottom: rem(30);
       max-width: rem(300);
     }
   }
-  &__col-body{
+  &__bootstrap-col-body{
       &:not(:last-child){
         &::after{
           content: '';

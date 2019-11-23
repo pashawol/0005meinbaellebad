@@ -79,7 +79,7 @@ select.form-control {
 
 // For use with horizontal and inline forms, when you need the label (or legend)
 // text to align with the form controls.
-.col-form-label {
+.bootstrap-col-form-label {
   padding-top: calc(#{$input-padding-y} + #{$input-border-width});
   padding-bottom: calc(#{$input-padding-y} + #{$input-border-width});
   margin-bottom: 0; // Override the `<label>/<legend>` default
@@ -87,14 +87,14 @@ select.form-control {
   line-height: $input-line-height;
 }
 
-.col-form-label-lg {
+.bootstrap-col-form-label-lg {
   padding-top: calc(#{$input-padding-y-lg} + #{$input-border-width});
   padding-bottom: calc(#{$input-padding-y-lg} + #{$input-border-width});
   @include font-size($input-font-size-lg);
   line-height: $input-line-height-lg;
 }
 
-.col-form-label-sm {
+.bootstrap-col-form-label-sm {
   padding-top: calc(#{$input-padding-y-sm} + #{$input-border-width});
   padding-bottom: calc(#{$input-padding-y-sm} + #{$input-border-width});
   @include font-size($input-font-size-sm);
@@ -187,7 +187,7 @@ textarea.form-control {
   margin-right: -$form-grid-gutter-width / 2;
   margin-left: -$form-grid-gutter-width / 2;
 
-  > .col,
+  > .bootstrap-col,
   > [class*="col-"] {
     padding-right: $form-grid-gutter-width / 2;
     padding-left: $form-grid-gutter-width / 2;

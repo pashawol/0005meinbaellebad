@@ -4,7 +4,7 @@ mixin s-main-prod()
 		.container
 			.row
 				- for (var x = 1; x <= 3; x++)
-					+e.col.col-md-4
+					+e.bootstrap-col.bootstrap-col-md-4
 						a(href="#")
 							+pic(`cat-${x}`,'','lazy',0)
 			

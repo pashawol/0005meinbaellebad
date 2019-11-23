@@ -1,6 +1,6 @@
 .s-main-prod {
 	padding-bottom: rem(80);
-		 &__col{
+		 &__bootstrap-col{
 			 margin-bottom: rem(15);
 		 }
 	@include media-breakpoint-up(xl) {}

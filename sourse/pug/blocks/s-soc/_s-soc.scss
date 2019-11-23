@@ -3,7 +3,7 @@
 
 		@include roww(11); 
 	}
-	&__col{
+	&__bootstrap-col{
 		margin-bottom: rem(22);
 	}
 	@include media-breakpoint-up(xl) {}
