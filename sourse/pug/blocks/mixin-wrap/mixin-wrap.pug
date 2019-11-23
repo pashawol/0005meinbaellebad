@@ -133,7 +133,7 @@ mixin mnu()
 mixin mnu()
 	//- взял с сайта
 	.navigation--list-wrapper
-		ul.navigation--list.container.js--menu-scroller--list(role='menubar', itemscope='itemscope', itemtype='http://schema.org/SiteNavigationElement', style='bottom: 0px; margin-top: 0px;')
+		ul.navigation--list.bootstrap-container.js--menu-scroller--list(role='menubar', itemscope='itemscope', itemtype='http://schema.org/SiteNavigationElement', style='bottom: 0px; margin-top: 0px;')
 			li.navigation--entry.is--active.is--home.js--menu-scroller--item(role='menuitem')
 				a.navigation--link.is--first.active(href='https://www.meinbaellebad.de/', title='Home', itemprop='url')
 					span(itemprop='name')
@@ -274,7 +274,7 @@ mixin pic2({i, bg, lazy="lazy", media='576px'})
 
 mixin ie11()
 	
-	<!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
+	<!--[if lt IE 11]><p   class="browsehappy bootstrap-container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
 
 
 	mixin prod(i,sl)

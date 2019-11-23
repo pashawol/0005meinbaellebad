@@ -96,11 +96,11 @@ $grid-breakpoints: (
   xxl: 1800px
 ) !default; 
 
-// Grid containers
+// Grid bootstrap-containers
 //
-// Define the maximum width of `.container` for different screen sizes.
+// Define the maximum width of `.bootstrap-container` for different screen sizes.
 
-$container-max-widths: (
+$bootstrap-container-max-widths: (
   xs: 480px,
   sm: 540px,
   md: 720px,
@@ -589,7 +589,7 @@ $form-feedback-icon-invalid:        none !default;
 
 // // Dropdowns
 // //
-// // Dropdown menu container and contents.
+// // Dropdown menu bootstrap-container and contents.
 
 // $dropdown-min-width:                10rem !default;
 // $dropdown-padding-y:                .5rem !default;

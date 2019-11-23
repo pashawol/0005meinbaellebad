@@ -1,14 +1,14 @@
 mixin s-catalog()
 	// start s-catalog
 	+b.SECTION.s-catalog.section#s-catalog&attributes(attributes)
-		.container
+		.bootstrap-container
 			+b.section-title.text-center
 				h2 Unsere 
 					| 
 					span  Bestseller
 					
 				
-			+e.slider-3.one-slider--js.swiper-container
+			+e.slider-3.one-slider--js.swiper-bootstrap-container
 				.swiper-wrapper
 					- for (var x = 1; x < 4; x++)
 						.swiper-slide
